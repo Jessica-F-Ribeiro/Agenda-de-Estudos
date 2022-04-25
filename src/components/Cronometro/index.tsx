@@ -1,7 +1,7 @@
 import Botao from "../botao";
 import Relogio from "./Relogio";
 import style from './Cronometro.module.scss'
-import { tempoParaSegundos } from "../../utils/date";
+import { tempoParaSegundos } from "../../common/utils/date";
 import { ITarefas } from "../../types/Tarefas";
 import { useEffect, useState } from "react";
 
