@@ -29,14 +29,15 @@ function regressiva(contador:number = 0){
 }
 
     return(
-            <div className={style.cronometro}>
-                <p className={style.titulo}>Escolha um card e inicie o cronometro</p>
-                <div className={style.relogioWrapper}>
-                    <Relogio tempo={tempo}/>
-                </div>
-                <Botao onClick={() =>regressiva(tempo)}>
-                    Iniciar!
-                </Botao>
+        <div className={style.cronometro}>
+            <p className={style.titulo}>Escolha um card e inicie o cronometro</p>
+            tempo:{tempo}
+            <div className={style.relogioWrapper}>
+                <Relogio tempo={tempo}/>
             </div>
+            <Botao onClick={() =>regressiva(tempo)}>
+                Iniciar!
+            </Botao>
+        </div>
     )
 }
